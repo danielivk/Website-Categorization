@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.5.6'  // Ensure Spring Boot version is correctly specified
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE' // Ensures dependency management works
+}
+
+repositories {
+    mavenCentral()  // Ensure you're using Maven Central to resolve dependencies
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.jsoup:jsoup:1.14.3'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:3.11.2' // Add Mockito for mocking
+}
+
